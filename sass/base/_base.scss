@@ -1,0 +1,241 @@
+html,body{
+	height: 100%;
+}
+#container {	
+	margin:0 auto -810px;
+	min-height:100%;
+}
+.inner{
+	@include background(image-url("content-left.png"), image-url("content-right.png"), image-url("border-line.png"), image-url("border-line.png"));
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-position: left top, right top, left bottom, right bottom;
+	background-color: #17191D;
+	padding: 30px 45px 10px;
+	border-bottom: 1px solid #152735;
+}
+i{
+	display: inline-block;
+}
+.ico-list{
+	width: ico-sprite-width(list);
+      height: ico-sprite-height(list);
+      margin-right: 5px;
+        float: left;
+  position: relative;
+  top: 6px;
+    margin-left: 5px;
+}
+ul.inner-list{
+	  margin-bottom: 40px;
+	li{
+		color: #8edaf0;
+		margin-bottom: -15px;
+		p{
+			padding-left: 20px;
+		}
+      a{
+      	  margin-top: 8px;
+  display: inline-block;
+      }
+	}
+}
+.form-wrap{
+	@include background(image-url("form-top.png"));
+	background-repeat: no-repeat;
+	padding-top: 60px;
+	h3{margin-bottom: 2px;}
+	.inner{
+		padding-top: 45px;
+		margin-top: 35px;
+		    margin-left: 80px;
+    margin-right: 90px;
+	}
+	p{
+		color: #c3d6e2;
+		    font-size: 14px;
+	}
+}
+.header-form{
+	  padding-bottom: 10px;
+	input{
+		float: right;
+		    position: relative;
+    top: -7px;
+	}
+	p{
+		font-size: 14px;
+		margin-bottom: 40px;
+		
+	}
+	.last{
+			margin-bottom: 0;
+		}
+	i{
+		font-family: Arial, Helvetica, sans-serif;
+		font-style: italic;
+		font-size: 12px;
+		color: #5c818e;
+		a{
+			color: #63a5b8;
+			
+		}
+	}
+}
+.star{
+	position: relative;
+	display: inline-block;
+	&:after{
+	content: '';
+		@include ico-sprite(star);
+		width: ico-sprite-width(star);
+      height: ico-sprite-height(star);
+      position: absolute;
+		
+
+	}
+}
+.line{
+	height: 30px;
+	@include background(image-url("line.png"));
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.upload{
+	  padding-top: 10px;
+	  padding-bottom: 35px;
+	  p{
+	  	    margin-bottom: 35px;
+	  }
+}
+.right{
+	float: right;
+	    position: relative;
+    top: -10px;
+}
+.center{
+	text-align: center;
+	color: #fd6910 !important;
+	font-weight: bold;
+	    margin-bottom: 30px !important;
+}
+p.red{
+	color: #fe483f;
+	margin-top: -10px;
+    margin-bottom: 28px;
+}
+.slider-wrap{
+	@include background(image-url("long-line.png"), image-url("long-line.png"));
+	background-repeat: no-repeat, no-repeat;
+	background-position: center top, center bottom;
+	height: 145px;
+	margin: 40px 0;
+	padding-top: 2px;
+      #slider{
+      	div{
+      		display: inline-block;
+      		float: left;
+      	}
+      }
+}
+.copiright{
+	@include background(image-url("footer.png"));
+	background-repeat: repeat-x;
+	height: image-height("footer.png");
+	line-height: image-height("footer.png");
+	margin-top: 65px;
+	margin-bottom: 0;
+	color: #777676;
+	padding-left: 30px;
+}
+.select-cont{
+	    margin-bottom: 30px;
+	    color: #c3d6e2;
+    font-size: 14px;
+}
+.select-wrap{
+     text-align: center;
+	 div{ 	
+	   	height: 35px;	 	
+	 	width: 70px;
+	 	display: inline-block;
+	 	position: relative;
+	 	@include input-visible;
+	 	border-radius: 3px;
+	 	text-align: left;
+	 	line-height: 35px;
+	 	padding-left: 0;
+	 	&:nth-child(2){
+	 		margin: 0 10px;
+	 	}
+	 	
+	 	p{
+	 		width:100%; 
+			height:100%; 
+			position:absolute;
+			 box-sizing: border-box; 
+			padding-left: 10px;
+			left:0; 
+			top:0; 
+			font-size: 13px;
+	 	     color: #53a7bf;			 
+			line-height:34px; 
+			overflow:hidden;
+			&:after{
+	 		content: '';
+	 		position: absolute;
+	 		top: 0;
+	 		right: 0;
+	 		z-index: 0;
+	 		cursor: pointer;
+	 		@include ico-sprite(s-button);
+		width: ico-sprite-width(s-button);
+      height: ico-sprite-height(s-button);
+	 	}
+	 	}
+	 }
+}
+.pic-wrap{
+	position: relative;
+	.ico-zoom {
+      width: ico-sprite-width(zoom);
+      height: ico-sprite-height(zoom);
+      position: absolute;
+      left: 50%;
+      margin-left: -(ico-sprite-width(zoom)/2);
+      top: 50%;
+      margin-top: -(ico-sprite-height(zoom)/2);
+      cursor: pointer;
+      outline: none;
+      z-index: 20;
+      display: none;
+	}
+		.pick-continer{
+			border: 3px solid #BDBDBD;
+			margin-bottom: 40px;		
+	}	
+	             &:after{
+		            content: '';
+		             position: absolute;
+		             width: 100%;
+		             height: 100%;
+		             left: 0;
+		             top: 0;
+		             background-color: rgba(11,67,101, .7);
+		             z-index: 10;
+		             opacity: 0;
+		            @include transition-property(opacity);
+                     @include transition-duration(1s);
+	}	
+			&:hover:after{		             
+					 opacity: 1;
+		            	           
+			}
+			&:hover{
+				.ico-zoom{
+					display: block;
+				}
+			}
+			
+
+
+}

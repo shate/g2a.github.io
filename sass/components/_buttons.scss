@@ -1,0 +1,40 @@
+button{
+	
+	color: #fff;
+	font-size: 16px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-repeat: no-repeat;
+	position: relative;
+
+	i{
+		display: inline-block;
+		width: ico-sprite-width(load);
+      height: ico-sprite-height(load)+2;
+      margin-right: 10px;
+      position: relative;
+      top: 2px;
+	}
+}
+button.blue{
+	@include ico-sprite(b-b-button);
+		width: ico-sprite-width(b-b-button);
+      height: ico-sprite-height(b-b-button);
+}
+.brown{
+	@include ico-sprite(b-d-button);
+		width: ico-sprite-width(b-d-button);
+      height: ico-sprite-height(b-d-button);
+}
+.sub{
+	@include ico-sprite(sub);
+		width: ico-sprite-width(sub);
+      height: ico-sprite-height(sub);
+          display: block;
+    margin: auto;
+}

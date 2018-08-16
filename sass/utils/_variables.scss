@@ -1,0 +1,27 @@
+
+@import "compass";
+@import "susy";
+$susy:(
+	columns: 10,
+  	container: 1000px,
+
+  
+  debug: (
+    image: hide,
+    color: rgba(#66f, .65),
+   
+  )
+  );
+
+$footerH : 833px; /*Высота футтера*/
+
+$base-font-size: 13px;
+$base-line-height : 25px;
+$base-font: Verdana, Geneva, sans-serif;
+$base-font-color : #c3d6e2;
+
+/*Цвет ссылок*/
+$normal: #8fe3fd; 
+$hover : #8fe3fd;
+
+

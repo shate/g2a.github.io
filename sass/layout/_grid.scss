@@ -1,0 +1,32 @@
+
+/*---------------------*/
+@include layout(10 (80px 20px) inside static);
+.wrap{
+	@include container(1002px border-box);
+}
+.content{
+	      
+    position: relative;
+       .wrap{
+       		@include background(image-url("wrap-top.png"));
+	background-repeat: no-repeat;
+	background-position: center top;
+       	padding: 60px 0 0;
+    background-color: #171719;
+    -webkit-box-shadow: 0px 5px 7px 0px rgba(15, 15, 15, 0.75);
+-moz-box-shadow:    0px 5px 7px 0px rgba(15, 15, 15, 0.75);
+box-shadow:         0px 5px 7px 0px rgba(15, 15, 15, 0.75);
+
+    .content-wrap{
+    	padding: 0 87px;
+       }
+    }
+	}
+
+
+
+
+
+
+
+

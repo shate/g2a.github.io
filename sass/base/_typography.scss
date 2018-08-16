@@ -1,0 +1,40 @@
+
+@include font-face("FreeSet", font-files("FreeSet.ttf", "FreeSet.eot","FreeSet.svg","FreeSet.woff"));
+@include font-face("PFDinDisplayPro-Bold", font-files("PFDinDisplayPro-Bold.ttf", "PFDinDisplayPro-Bold.eot","PFDinDisplayPro-Bold.svg","PFDinDisplayPro-Bold.woff"));
+
+@include establish-baseline;
+body{
+	font-family: $base-font;	
+	color: $base-font-color;
+	font-size: $base-font-size;	
+	background-color: #0C0C0D;
+	@include background(image-url("textura.png"));
+	background-repeat: repeat-y;
+	background-position: center top;
+	background-size: cover; 
+}
+h3{
+	font-family: "FreeSet";
+	font-size: 21px;
+	text-align: center;
+	color: #8FE3FD;
+	margin-bottom: 30px;
+  letter-spacing: -0.02em;
+}
+h4{
+	font-size: 16px;
+	color: #8fe3fd;
+	text-align: center;
+	  letter-spacing: -0.02em;
+	  margin-bottom: 35px;
+}
+p{
+	line-height: 20px;  
+  margin-bottom: 20px;
+    letter-spacing: -0.03em
+}
+
+a{
+	@include link-colors($normal, $hover);
+	
+}

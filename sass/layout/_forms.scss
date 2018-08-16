@@ -1,0 +1,41 @@
+input[type=text]{	
+	border: 1px solid transparent;	
+	height: 31px;
+	width: 225px;
+	border-radius: 10px;
+	color: #53a7bf;
+	@include input-visible;	
+	@include input-placeholder {
+    color: #53a7bf;
+   
+  }
+}
+label{
+	color: #53a7bf;
+	font-size: 13px;
+ }
+ input[type="checkbox"] {
+    display:none;            
+}
+input[type="checkbox"] + label {
+	position: relative;
+	
+  
+}
+input[type="checkbox"] + label::before{
+    content: "";
+    display: inline-block;
+   @include ico-sprite(r-off);
+		width: ico-sprite-width(r-off);
+      height: ico-sprite-height(r-off);
+          margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+input[type="checkbox"]:checked + label::before {
+    @include ico-sprite(r-on);
+}
+label[for="check1"]{
+	    margin-right: 20px;
+	        top: 5px;
+}

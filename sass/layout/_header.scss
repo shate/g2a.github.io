@@ -1,0 +1,33 @@
+header {
+	
+	height: image-height("top.jpg");
+  min-width: 1000px;
+  margin-bottom: -202px;
+ .header-img{
+ 	@include background(image-url("top.jpg"));
+	height: image-height("top.jpg");
+	 background-repeat: no-repeat; 
+  background-position: center top;
+  max-width: 1920px;
+  margin: auto;
+ }
+	.logo{
+		@include ico-sprite(logo);
+		width: ico-sprite-width(logo);
+	    height: ico-sprite-height(logo);
+	    text-indent: -9999px;
+	     outline: none;
+	     display: inline-block;
+	     float: right;
+	       margin-right: -40px;
+  margin-top: -30px;
+}
+	}
+
+@media (max-width: 1100px){
+	header{
+		.logo{
+			 margin-right: 0;
+		}
+	}
+}

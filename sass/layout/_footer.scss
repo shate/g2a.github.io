@@ -1,0 +1,16 @@
+footer {
+	
+	
+	height: $footerH;
+	 min-width: 1000px;
+	     position: relative;
+    z-index: -1;
+    .footer-img{
+    	@include background(image-url("footer.jpg"));
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: $footerH;
+	max-width: 1920px;
+	margin: auto;
+    }
+}
